@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kushwaha | Developer Portfolio</title>
+    <meta name="description" content="Explore Abhishek Kushwaha's developer portfolio, skills, featured projects, and contact informations.">
+
+    <!-- tailwind css cdn for this beginner-friendly demo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tailwind theme -->
+     <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    fontFamily:{
+                        sans:["Inter", "sans-serif"],
+                    },
+                    colors:{
+                        dark:"#09090F",
+                        surfaces:"#11111B",
+                        accent:"#A7B8FA",
+                    },
+                    boxShadow:{
+                        glow:"0 0 50px rgba(139, 92, 246, 0.18)",
+                    },
+                },
+            },
+        };
+     </script>
+<!-- google fonts  -->
+ <link rel="preconnet" href="https://fonts.googleapis.com">
+ <link rel="preconnet" href="https://fonts.gstatic.com" crossorigin/>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+ <style>
+    body{
+        background-color:#09090f;
+    }
+
+
+    .grid-background{
+        background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px), 
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025), 1px, transparent 1px);
+        background-size:40px 40px;
+    }
+
+
+    .gradient-text{
+        background: linear-gradient(100deg, #c4b5fd, #818cf8, #67e8f9);
+        -webkit-background-clip:text;
+        background-clip:text;
+        color:transparent;
+    }
+
+
+    .gradient-border{
+        position:relative;
+        isolation: isolate;
+
+    }
+
+    .graident-border::before{
+        content:"";
+        position:absolute;
+        inset:-1px;
+        border-radius:inherit;
+        background:linear-gradient(135deg, #8b5cf6, #27273a, #22d3ee);
+        z-index:-1;
+        opacity:.65;
+    }
+    
+ </style>
+</head>
+
+<body class="font-sans text-white selection:bg-violet-500/40">
+    <!-- background effects -->
+
+     <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute -top-48 left-1/4 h-96 w-96 rounded-full bg-violet-600/10 blur-[120px]"></div>
+        <div class="absolute right-0 top-1/2 h-96 w-96 rounded-full bg-cyan-500/10 blur-[130p]"></div>
+        
+     </div>
+
+<!-- Navbar -->
+ <header class="sticky top-0 z-50 border-b border-white/10 bg--[#09090F]/85 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5">
+        <a href="#home" class="text-xl font-extrabold tracking-tight">
+            Dev<span class="text-violet-400">Folio.<span>
+        </a>
+        <div class="flex flex-wrap items=center gap-4 text-sm text-gray-400 sm:gap-7">
+            <a href="about" class="transition hover:text-white">About</a>
+            <a href="skills" class="transition hover:text-white">Skills</a>
+            <a href="projects" class="transition hover:text-white">Projects</a>
+            <a href="contact" class="rounded-full border border-violet-400/40 px-4 py-2 text-white transition hover:bg-violet-500/15">Contact</a>
+
+
+        </div>
+    </nav>
+
+
+ </header>
+
+
+ <main class="grid-background">
+    <!-- hero section -->
+
+    <section id="home" class="mx-auto grid max-w-6xl items-center gap-14 px-5 py-20 md:grid-cols-2 md:py-28">
+        <!-- hero content -->
+
+        <div>
+            <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/5 px-4 py-2 text-sm text-emerald-300">
+                <span class="relative flex h-2 w-2">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+
+                </span>
+                Open to Opportunities
+            </div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-violet-400">
+                Hello, I'm
+
+            </p>
+             <h1 class="text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl">Abhishek 
+             <span class="gradient-text block">Kushwaha</span>
+             </h1>
+
+             <h2 clas="mt-5 text-xl font-medium text-gray-300 sm:text-2xl"> Frontend Developer
+                <span class="text-violet-400">&</span> UI Enthusiast
+             </h2> 
+
+             <p class="mt-6 max-w-lg leading-8 text-gray-400">
+                I transform ideas into beautiful digital experience. 
+                I love building modern, responsive websites with clean code and thoughtful user interfaces.
+             </p>
+             <!-- CTA buttons -->
+
+             <div class ="mt-8 flex flex-wrap gap-4">
+                <a href="#projects" class="rounded-xl bg-violet-600 px-6 py-3.5 font-semibold shadow-glow transition duration-300 hover:-translate-y-1 hover:bg-violet-500"> Explore My Work</a>
+
+                <a href="contact" class="rounded-xl border border-white/15 px-6 py-3.5 font-semibold text-gray-200 transition duration-300 hover:border-violet-400/50 hover:bg-white/5">Let's Connect</a>
+             </div>
+
+             <!-- social links: replace #with your real URLs -->
+              <div class="mt-9  flex flex-wrap items-center gap-5 text-sm text-gray-400">
+                <span> Find me on </span>
+
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="font-medium transition hover:text-violet-300">Github</a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="font-medium transition hover:text-violet-300">LinkedIn</a>
+
+              </div>
+        </div>
+
+        <!-- profile card -->
+
+        <div class="relative mx-auto w-full max-w-md">
+            <div class="absolute inset-5 rounded-full bg-violet-600/20 blur-[80px]">
+            </div>
+            <div class="gradient-border rounded-3xl"> 
+                <div class="rounded-3xl bg-[#11111B]/95 p-6 shadow-2xl backdrop-blur-xl sm:p-8">
+
+                    <!-- card header -->
+
+                    <div class="flex items-center justify-between">
+
+                        <div class="flex gap-2">
+                            <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                            <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                            <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                        </div>
+                        <span class="text-xs tracking-widest text-gray-500">PROFILE.EXE</span>
+                    </div>
+
+                    <!-- Avatar -->
+
+                    <div class="my-8 flex justify-center">
+                        <div class="flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 via-indigo-500 to-cyan-400 p-1 shadow-glow">
+                            <div class="flex h-full w-full items-center justify-center rounded-full bg:[#11111B] text-4xl font-extrabold">
+                            AK                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold">Abhishek Kushwaha</h3>
+                        <p  class="mt-2 text-sm text-gray-400"> Building the web, one idea at a time.</p>
+                    </div>
+
+                    <!-- divider -->
+
+                    <div class="my-7 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+                        <div class="mb-4 flex items-center justify-betwee">
+                            <h4 class="text-sm font-semibold uppercase tracking-widest text-gray-400">Tech Stack</h4>
+                            <span class="text-xs text-violet-300">2026</span>
+                        </div>
+
+                        <!-- skil badges -->
+                         <div class="flex flex-wrap gap-2">
+                            <span class="rounded-lg border border-orange-400/20 bg-orange-400/10 px-3 py-2 text-sm text-orange-300"> HTML</span>
+                            <span class="rounded-lg border border-orange-400/20 bg-orange-400/10 px-3 py-2 text-sm text-orange-300"> CSS </span>
+                            <span class="rounded-lg border border-orange-400/20 bg-orange-400/10 px-3 py-2 text-sm text-orange-300"> JavaScript</span>
+                            <span class="rounded-lg border border-orange-400/20 bg-orange-400/10 px-3 py-2 text-sm text-orange-300"> React</span>
+                            <span class="rounded-lg border border-orange-400/20 bg-orange-400/10 px-3 py-2 text-sm text-orange-300"> Tailwind CSS</span>
+\
+
+                         </div>
+
+                         <!-- stats -->
+                          <div class="mt-7 grid grid-cols2 gap-4">
+                            <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-violet-400/10"> 
+                                <p class="text-3xl font-extrabold">12<span class="text-violet-400">+</span></p>
+                                <p class="mt-1 text-sm text-gray-500">Project Built</p>
+                            
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-cyan-400/40">
+                                <p class="text-3xl font-extrabold">2 <span clas="text-cyan-400">+</span> </p>
+                                <p class="mt-1 text-sm text-gray-500">Years Learning</p>
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section  -->
+
+<section id="about" class="mx-auto max-w-6xl px-5 py-16"> 
+    <div class="grid gap-8 md:grid-cols-2 md:items-center">
+        <div>
+            <p class="text-sm font-semibod uppercase tracking-[0.25em] text-violt-400"> A little about me</p>
+            <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl"> Turning indea into <span class="graident-text">reality</span></h2>     
+        </div>
+
+        <p class="leading-8 text-gray-400">
+            I'm a passionate develoer who enjoyes creating intuitive interfaces and solving real-world promblems through code. My goal is to build digital product that look great, work smoothly and provide a memorable user experience.
+        </p>
+    </div>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:translate-y-1 hover:border-violet-400/40">
+            <div class="text-3xl">💡</div>
+            <h3 class="mt-4 font-bold">Creative Thinking</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-400"> Finding simple, elegant solutions to design challenges.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:translate-y-1 hover:border-cyan-400/40">
+            <div clas="text-3xl">💻</div>
+            <h3 class="mt-4 font-bold">Clean Code</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-400">Building maintainable interfaces with attention to detail.</p>
+        </div>
+
+        <div class=" rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:-translate-y-1 hover:border-indigo-400/40">
+            <div class="text-3xl">🚀</div>
+            <h3 class="mt-4 font-bold">Alaways Learning</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-400">Exploring modern tools and improving every day.</p>
+        </div>
+    </div>
+</section>
+
+<!-- skills section  -->
+
+<section id="skills" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="text-center">
+        <p class="text-sm font-semibod uppercase tracking-[0.25em] text-violet-400">What I work with</p>
+        <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">My Skills</h2>
+        <p class="mx-auto mt-4 max-w-xl leading-7 text-gray-400">Technologies and tools I use to bring digital experience to life.</p>
+    </div>
+
+    <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div class="rounded-2xl border border-white/10 bg-[#11111B] p-5 text-center transition duration-300 hover:-translate-y-1 hover:border-orange-400/40">
+            <div class="text-3xl font-black text-orange-400">5</div>
+            <h3 class="mt-3 font-semibold">HTML5</h3>
+            <p class="mt-1 text-xs text-gray-500">Structure</p>
+        </div>
+
+        
+        <div class="rounded-2xl border border-white/10 bg-[#11111B] p-5 text-center transition duration-300 hover:-translate-y-1 hover:border-blue-400/40">
+            <div class="text-3xl font-black text-yellow-400">3</div>
+            <h3 class="mt-3 font-semibold">CSS3</h3>
+            <p class="mt-1 text-xs text-gray-500">Styling</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-[#11111B] p-5 text-center transition duration-300 hover:-translate-y-1 hover:border-yellow-400/40">
+            <div class="text-3xl font-black text-yellow-400">JS</div>
+            <h3 class="mt-3 font-semibold">JavaScript</h3>
+            <p class="mt-1 text-xs text-gray-500">Logic</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-[#11111B] p-5 text-center transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40">
+            <div class="text-3xl font-black text-yellow-400">React</div>
+            <h3 class="mt-3 font-semibold">React</h3>
+            <p class="mt-1 text-xs text-gray-500">UI Library</p>
+        </div>
+        
+
+        <div class="rounded-2xl border border-white/10 bg-[#11111B] p-5 text-center transition duration-300 hover:-translate-y-1 hover:border-violet-400/40">
+            <div class="text-3xl font-black text-yellow-400">TW</div>
+            <h3 class="mt-3 font-semibold">Tailwind</h3>
+            <p class="mt-1 text-xs text-gray-500">Utility CSS</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Projects Section -->
+
+<section id ="projects" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="flex flex-wrap items-end justify-between gap-5">
+        <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">Selected Work</p>
+            <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl"> Featured Projects </h2>
+        </div>
+
+        <p class="max-w-sm text-sm leading-6 text-gray-400"> A few ideas I've turned into digital experiences.</p>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+<!-- Project 1 -->
+    
+    <article class="group overflow-hidden rounded-2xl border border-white/10 bg-[#11111B] transition duration-300 hover:-translate-y-2 hover:border-violet-400/40">
+        
+        <div class="flex h-48 items-center justify-center bg-gradient-to-br from-violet-600/30 via-indigo-500/10 to-cyan-500/20">
+            <div class="rounded-2xl border border-white/15 bg-black/30 p-7 text-center backdrop-blur-sm transition duration-300 group-hover:scale-105">
+                <span class="text-5xl">🌐</span>
+                <p class="mt-3 font-bold">My Portfolio</p>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-violet-300">Web Design</span>
+            <h3 class="mt-3 text-xl font-bold"> Portfolio Website</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">A personal website shocasing skills, experience and selected work.</p>
+
+            <div class="mt-5 flex flex-wrap gap-2 text-xs text-gray-300">
+                <span class="rounded-md bg-white/5 px-2.5 py-1.5">HTML</span>
+                <span class="rounded-md bg-white/5 px-2.5 py-1.5">Tailwind CSS</span>
+
+            </div>
+
+            <a href="#contact" class="mt-6 inline-block text-sm font-semibold text-violet-300 transition hover:text-white">Discuss Project</a>
+        
+        </div>
+        </article>
+
+        <!-- project 2 -->
+
+
+            <article class="group overflow-hidden rounded-2xl border border-white/10 bg-[#11111B] transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40">
+        
+        <div class="flex h-48 items-center justify-center bg-gradient-to-br from-cyan-600/30 via-blue-500/10 to-violet-500/20">
+            <div class="rounded-2xl border border-white/15 bg-black/30 p-7 text-center backdrop-blur-sm transition duration-300 group-hover:scale-105">
+                <span class="text-5xl">📊</span>
+                <p class="mt-3 font-bold">Analytics</p>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-violet-300">Dashboard UI</span>
+            <h3 class="mt-3 text-xl font-bold"> Analytics Dashboard</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">A modern dashboard concept for displaying important metrics.</p>
+
+            <div class="mt-5 flex flex-wrap gap-2 text-xs text-gray-300">
+                <span class="rounded-md bg-white/5 px-2.5 py-1.5">HTML</span>
+                <span class="rounded-md bg-white/5 px-2.5 py-1.5">CSS</span>
+
+            </div>
+
+            <a href="#contact" class="mt-6 inline-block text-sm font-semibold text-violet-300 transition hover:text-white">Discuss Project</a>
+        
+        </div>
+        </article>
+
+        <!-- project 3 -->
+
+            <article class="group overflow-hidden rounded-2xl border border-white/10 bg-[#11111B] transition duration-300 hover:-translate-y-2 hover:border-pink-400/40">
+        
+        <div class="flex h-48 items-center justify-center bg-gradient-to-br from-pink-600/30 via-purple-500/10 to-blue-500/20">
+            <div class="rounded-2xl border border-white/15 bg-black/30 p-7 text-center backdrop-blur-sm transition duration-300 group-hover:scale-105">
+                <span class="text-5xl">✅</span>
+                <p class="mt-3 font-bold">Task Manager</p>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-violet-300">Productivity</span>
+            <h3 class="mt-3 text-xl font-bold">Task Manager UI</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">A clean task management interface with cards and status labels.</p>
+
+            <div class="mt-5 flex flex-wrap gap-2 text-xs text-gray-300">
+                <span class="rounded-md bg-white/5 px-2.5 py-1.5">HTML</span>
+                <span class="rounded-md bg-white/5 px-2.5 py-1.5">Tailwind CSS</span>
+
+            </div>
+
+            <a href="#contact" class="mt-6 inline-block text-sm font-semibold text-violet-300 transition hover:text-white">Discuss Project</a>
+        
+        </div>
+        </article>
+        
+    </div>
+</section>
+
+<!-- contact section -->
+
+<section id="contact"  class="mx-auto max-w-4xl px-5 py-20">
+
+    <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-[#11111B] p-8 text-center shadow-glow sm:p-14">
+
+        <div class="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-violet-500/15 blur-3xl"></div>
+        <div class="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-cyan-500/15 blur-3xl"></div>
+
+        <div class="relative">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet">
+                Have an idea?
+            </p>
+            <h2 class="mt-4 text-3xl font-extrabold sm:text-5xl">
+                Let's build something.
+                <span class="gradient-text">amazing.</span>
+            </h2>
+
+            <p class="mx-auto mt-5 max-w-xl leading-7 text-gray-400">
+                Have a project in mind, want to collaborate, or just want to say hello? My inbox is open.
+            </p>
+
+            <!-- Replace with your real email -->
+
+            <a href="mailto:hello@example.com"
+            class="mt-8 inline-flex items-center gap-2 rounded-xl bg-violet-600 px-7 py-4 font-semibold transition hover:-translate-y-1 hover:bg-violet-500">
+             ✉ Get in Touch
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+ </main>
+
+<footer class="border-t border-white/10 px-5 py-7">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center text-sm text-gray-500 sm:flex-row sm:text-left">
+        <p>© 2026 Abhishek Kushwaha. All rights reserved.</p>
+        <p>Designed with <span class="text-violet-400">♥</span> and Tailwind CSS</p>
+    </div>
+</footer>
+
+</body>
+</html>
